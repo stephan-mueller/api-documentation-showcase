@@ -10,6 +10,7 @@
     <version>0</version>
 
     <modules>
+        <module>mp-openapi-showcase</module>
         <module>swagger-showcase</module>
     </modules>
 </project>

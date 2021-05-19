@@ -1,0 +1,64 @@
+---
+openapi: 3.0.3
+info:
+  title: Greeting API
+  contact:
+    name: Stephan Mueller
+    email: stephan.mueller@acme.org
+    url: https://github.com/stephan-mueller/api-documentation-showcase/openapi-showcase
+  version: 0.0.0
+paths:
+  /api/greet:
+    get:
+      operationId: greetTheWorld
+      responses:
+        "200":
+          description: Ok
+  /api/greet/greeting:
+    get:
+      operationId: getGreeting
+      responses:
+        "200":
+          description: Ok
+    put:
+      operationId: updateGreeting
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GreetingDTO'
+      responses:
+        "204":
+          description: Greeting updated
+        "400":
+          description: Invalid 'greeting' request
+  /api/greet/{name}:
+    get:
+      description: Greet someone
+      operationId: greetSomeone
+      parameters:
+      - name: name
+        in: path
+        description: name
+        required: true
+        schema:
+          type: string
+        example: Stephan
+      responses:
+        "200":
+          description: Ok
+components:
+  schemas:
+    GreetingDTO:
+      required:
+      - greeting
+      type: object
+      properties:
+        greeting:
+          type: string
+          nullable: false
+    GreetDTO:
+      type: object
+      properties:
+        message:
+          type: string
