@@ -8,4 +8,8 @@
     <artifactId>api-documentation-showcase</artifactId>
     <packaging>pom</packaging>
     <version>0</version>
+
+    <modules>
+        <module>swagger-showcase</module>
+    </modules>
 </project>

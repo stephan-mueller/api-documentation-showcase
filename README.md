@@ -7,3 +7,5 @@
 This is a showcase for api documentation. It contains hello world applications, which demonstrates features of the
 [OpenAPI Specification](https://openapis.org) and others. Software requirements to run the samples are `maven`, `openjdk-8` (or any other 
 JDK 8) and `docker`.
+
+* The [swagger-showcase](swagger-showcase/README.md) shows features of Swagger.
