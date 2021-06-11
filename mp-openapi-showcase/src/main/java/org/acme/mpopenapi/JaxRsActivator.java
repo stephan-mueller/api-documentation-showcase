@@ -33,7 +33,6 @@ import javax.ws.rs.core.Application;
     servers = @Server(url = "http://{host}:{port}/{context-path}", variables = {
         @ServerVariable(name = "host", defaultValue = "localhost"),
         @ServerVariable(name = "port", defaultValue = "9080"),
-        @ServerVariable(name = "context-path", defaultValue = "mp-openapi-showcase")
     })
 )
 public class JaxRsActivator extends Application {

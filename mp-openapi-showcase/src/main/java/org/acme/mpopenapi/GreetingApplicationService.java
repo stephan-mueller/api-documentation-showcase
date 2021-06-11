@@ -40,7 +40,7 @@ public class GreetingApplicationService {
    * @param greeting greeting to use
    */
   @Inject
-  public GreetingApplicationService(@ConfigProperty(name = "app.greeting") final String greeting) {
+  public GreetingApplicationService(@ConfigProperty(name = "APP_GREETING") final String greeting) {
     this();
     this.greeting.set(greeting);
   }

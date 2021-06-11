@@ -138,9 +138,9 @@ public class CustomOASFilter implements OASFilter {
 
   @Override
   public Operation filterOperation(final Operation operation) {
-    if (Objects.equals(operation.getOperationId(), "updateGreeting")) {
+    if (operation.getOperationId().equals("updateGreeting")) {
       Config config = ConfigProvider.getConfig();
-      String appGreeting = config.getValue("app.greeting", String.class);
+      String appGreeting = config.getValue("APP_GREETING", String.class);
 
       LOG.info("Add custom extension to api operation %s", operation.getOperationId());
 
