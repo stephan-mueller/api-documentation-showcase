@@ -198,14 +198,12 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.0
 servers:
-  - url: "http://{host}:{port}/{context-path}"
+  - url: "http://{host}:{port}"
     variables:
       host:
         default: localhost
       port:
         default: "9080"
-      context-path:
-        default: mp-openapi-showcase
 paths:
   /api/greet:
     get:
