@@ -170,7 +170,7 @@ info:
   contact:
     name: Stephan Mueller
     email: stephan.mueller@acme.org
-    url: https://github.com/stephan-mueller/api-documentation-showcase/openapi-showcase
+    url: https://github.com/stephan-mueller/api-documentation-showcase/mp-openapi-showcase
   version: 0.0.0
 paths:
   /api/greet:
@@ -192,7 +192,7 @@ info:
   contact:
     name: Stephan Mueller
     email: stephan.mueller@acme.org
-    url: https://github.com/stephan-mueller/api-documentation-showcase/openapi-showcase
+    url: https://github.com/stephan-mueller/api-documentation-showcase/mp-openapi-showcase
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html

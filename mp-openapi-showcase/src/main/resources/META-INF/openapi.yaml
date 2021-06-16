@@ -5,7 +5,7 @@ info:
   contact:
     name: Stephan Mueller
     email: stephan.mueller@acme.org
-    url: https://github.com/stephan-mueller/api-documentation-showcase/openapi-showcase
+    url: https://github.com/stephan-mueller/api-documentation-showcase/mp-openapi-showcase
   version: 0.0.0
 paths:
   /api/greet:
