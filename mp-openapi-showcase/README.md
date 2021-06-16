@@ -99,7 +99,7 @@ public class GreetResource {
   @GET
   @Operation(operationId = "greetTheWorld", description = "Greet the world")
   @APIResponse(responseCode = "200", description = "Ok", content = @Content(schema = @Schema(implementation = GreetDTO.class), mediaType = MediaType.APPLICATION_JSON))
-  @Extension(name = "x-default-response", value = "Hello World!")
+  @Extension(name = "default-response", value = "Hello World!")
   public Response greetTheWorld() {
     return greet("World");
   }
@@ -216,7 +216,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/GreetDTO'
-          x-default-response: Hello World!
-      x-default-response: Hello World!
+^      x-default-response: Hello World!
 ...
 ```
